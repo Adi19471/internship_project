@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  
+
+
+
+<style type="text/css">
+    label{display:block;font-weight:bold;padding-bottom:10px}
+    form{text-align:center}
+</style>
+
+       <form method="post" class="projectform">
+               {% csrf_token %}
+               {{ ReportForm.as_p }}<br>
+                <input type="submit" id="submit" value="Submit Project Details">
+
+</form>
+  
+
+{% endblock content %}

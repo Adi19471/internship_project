@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+
+
+
+<center>
+<div class="container">
+
+
+    <marquee behavior="" direction="">
+      <h1 class="text-center text-success bg-white text-upper">WELCOME TO PROJECT MANAGER</h1>
+    </marquee>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img src="{% static 'images/home6.jpg' %}" alt="" class="d-block " id="one" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="btn btn-sm btn-info">our services</h5>
+            <p style="margin-top: -100px;color: rgba(31, 5, 145, 0.849); font-size:40px;">New
+              Technology
+              Area</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="{% static 'images/home4.jpg' %}" alt="" class="d-block " id="one" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="btn btn-sm btn-primary">All Courses</h5>
+            <p style="margin-top: -100px;color: rgb(182, 183, 185); font-size:40px;">Avalible
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{% static 'images/home5.jpg' %}" alt="" class="d-block " id="one" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="btn btn-success btn-sm ">Top Most Technologys </h5>
+            <p style="margin-top: -100px;color: rgb(166, 168, 167); font-size:40px;">Bigest Offer..!
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+</div>
+</center>
+<br>
+
+<div class="container">
+  <div class="row">
+
+
+    <div class="card-group">
+      <div class="card">
+        <img src="{% static 'images/home2.jpg' %}" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">
+            <p class="card-text"> <a href="{% url 'ProjectForm' %}">Submit Project Details</a></p>
+          </h5>
+          <p class="card-text">to develop specifications for an annotation system which would allow today’s Indigenous Australians to ‘answer back’, that is to respond to institutional archives by creating websites of collections comprising comments, digitised documents and even lists of other relevant collections..</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 5 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/home2.jpg' %}" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">
+            <p class="card-text"> <a href="{% url 'ProjectForm' %}">Submit Project Details</a></p>
+          </h5>
+          <p class="card-text">In today’s complex, technologically advanced business environment, project managers have a distinct advantage. In the past five years alone, there has been a solid increase in technologies that were built to enhance and reorganize project development with greater synchronicity, making a project manager’s job simpler, more intuitive and more easily adaptable to the ever-changing technological landscape. Here are just a few instances of how technology used in project management is changing the game for the better.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 13 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/home2.jpg' %}" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">
+            <p class="card-text"> <a href="{% url 'ProjectForm' %}">Submit Project Details</a></p>
+          </h5>
+          <p class="card-text">Information technology is the use of computers to create, process, store, retrieve, and
+            exchange all kinds of electronic data and information. IT is typically used within the context of business
+            operations as opposed to personal or entertainment technologies.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 20 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+{% endblock content %}
